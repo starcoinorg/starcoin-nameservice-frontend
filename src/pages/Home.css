@@ -1,0 +1,20 @@
+@import "../index.css";
+
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url(https://app.ens.domains/static/media/heroBG.f5f70c11169cb24a118d.jpg)
+    repeat scroll 0% 0% / cover;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: 1rem;
+}
