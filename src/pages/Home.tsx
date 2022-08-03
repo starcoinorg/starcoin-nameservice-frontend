@@ -8,26 +8,27 @@ export const Home = () => (
   <div className="home">
     <Nav />
 
-    <main className=" m-10">
+    <main>
       <img
-        className="max-h-[200px]"
+        id="home-logo"
+        className="max-h-[200px] ease-in duration-200 hover:scale-150 hover:my-10 animate-pulse hover:animate-none"
         src="https://app.ens.domains/static/media/ENSLogo.7345281bf4086d716e34fd63fabcb4aa.svg"
       ></img>
-      <h1>
-        {" "}
+      <h1 className="text-lg">
         迅猛的 <span className=" text-green-400 text-xl">SWC</span> 美观的{" "}
         <span className=" text-blue-200 text-xl">React</span> 和便捷的{" "}
         <span className=" text-xl text-blue-300">Tailwind</span>
       </h1>
       <h3>现在享受你的Web时光吧~</h3>
       <SearchBar show={true} fat={true} />
+      <Notification
+        link_to=""
+        title="STCNS constitution book now available"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+      />
     </main>
 
-    <Notification
-      link_to=""
-      title="STCNS constitution book now available"
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
-    />
+
 
     <footer className=" mt-20">
       <ul className="bg-white justify-center p-4">
@@ -65,13 +66,5 @@ export const Home = () => (
         </li>
       </ul>
     </footer>
-
-    <div
-      style={{
-        minHeight: "10000px",
-        background:
-          "url(https://app.ens.domains/static/media/heroBG.f5f70c11169cb24a118d.jpg) repeat scroll 0% 0% / cover",
-      }}
-    ></div>
   </div>
 );

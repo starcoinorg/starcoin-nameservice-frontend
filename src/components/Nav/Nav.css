@@ -1,12 +1,5 @@
 @import "../../index.css";
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 5vw;
-  align-items: stretch;
-}
-
 ul {
   display: flex;
   align-items: center;
@@ -16,7 +9,16 @@ ul {
 }
 
 @layer components {
+  nav {
+    @apply flex p-[1rem] backdrop-blur-md bg-white bg-opacity-5 sticky top-0 z-50;
+
+    /* md */
+    @apply lg:justify-between lg:items-stretch;
+  }
   .btn {
-    @apply py-2 px-4 border-solid border-white border-[1px] text-white font-semibold rounded-lg shadow-md hover:bg-white hover:text-blue-500;
+    @apply py-2 px-4 border-solid border-white border-[1px] text-white font-semibold rounded-lg shadow-md hover:bg-white hover:text-blue-500 duration-200;
+  }
+  .btn-thin {
+    @apply py-1 px-4 border-solid border-white border-[1px] text-white font-semibold rounded-lg shadow-md hover:bg-white hover:text-blue-500 duration-200;
   }
 }
