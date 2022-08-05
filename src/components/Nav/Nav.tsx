@@ -22,30 +22,30 @@ export class Nav extends React.Component<NavProps, NavStates> {
   }
   render() {
     let navs = <>
-              <AuthContext.Consumer>
-            {({ user }) => {
-              if (user) {
-                return <>
-                  <li className=" hover:text-slate-300">
-                    <Link to="/dashboard">DashBoard</Link>
-                  </li>
-                  <li className=" hover:text-slate-300">
-                    <Link to="/">Domains</Link>
-                  </li>
-                </>
-              }
-            }}
-          </AuthContext.Consumer>
+      <AuthContext.Consumer>
+        {({ user }) => {
+          if (user) {
+            return <>
+              <li className=" hover:text-slate-300">
+                <Link to="/dashboard">DashBoard</Link>
+              </li>
+              <li className=" hover:text-slate-300">
+                <Link to="/">Domains</Link>
+              </li>
+            </>
+          }
+        }}
+      </AuthContext.Consumer>
 
-          <li className=" hover:text-slate-300">
-            <Link to="/">Home</Link>
-          </li>
-          <li className=" hover:text-slate-300">
-            <Link to="/">Faq</Link>
-          </li>
-          <li className=" hover:text-slate-300">
-            <Link to="/">About</Link>
-          </li>
+      <li className=" hover:text-slate-300">
+        <Link to="/">Home</Link>
+      </li>
+      <li className=" hover:text-slate-300">
+        <Link to="/">Faq</Link>
+      </li>
+      <li className=" hover:text-slate-300">
+        <Link to="/">About</Link>
+      </li>
     </>
     return (
       <nav>
@@ -58,9 +58,9 @@ export class Nav extends React.Component<NavProps, NavStates> {
         <div className="grid grid-flow-row min-w-full lg:hidden">
           <div className=" flex justify-between items-stretch">
             <div className=" text-white"
-            style={{
-              color: this.state.on_activate_menu ? 'white' : 'transparent',
-            }}
+              style={{
+                color: this.state.on_activate_menu ? 'white' : 'transparent',
+              }}
               onClick={() => {
                 this.setState({ on_activate_menu: false });
               }}
@@ -72,16 +72,16 @@ export class Nav extends React.Component<NavProps, NavStates> {
               this.setState({ on_activate_menu: !this.state.on_activate_menu })
             }}><FontAwesomeIcon icon={faBars} /></div>
           </div>
-          <div className="min-h-screen p-4" style={{
+          <div className=" p-4" style={{
             display: this.state.on_activate_menu ? 'block' : 'none'
           }}>
 
-          <ul className="grid grid-flow-row gap-4">
-          <AccountCard />
+            <ul className="grid grid-flow-row gap-4">
+              <AccountCard />
 
-          {navs}
+              {navs}
 
-          </ul>
+            </ul>
           </div>
         </div>
 

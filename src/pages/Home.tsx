@@ -21,20 +21,24 @@ export const Home = () => (
       </h1>
       <h3>现在享受你的Web时光吧~</h3>
       <SearchBar show={true} fat={true} />
-      <Notification
-        link_to=""
-        title="STCNS constitution book now available"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
-      />
+      <div className="max-w-[80%]">
+
+        <Notification
+          link_to=""
+          title="STCNS constitution book now available"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+        />
+      </div>
+
     </main>
 
 
 
     <footer className=" mt-20">
-      <ul className="bg-white justify-center p-4">
+      <ul className=" bg-brightblue justify-center p-4">
         <li>
           <a
-            className="text-blue-600"
+            className="text-white"
             href="https://reactjs.org/docs/hello-world.html"
           >
             React Guide
@@ -42,7 +46,7 @@ export const Home = () => (
         </li>
         <li>
           <a
-            className="text-blue-600"
+            className="text-white"
             href="https://basarat.gitbook.io/typescript/getting-started"
           >
             Typescript Online book
@@ -50,7 +54,7 @@ export const Home = () => (
         </li>
         <li>
           <a
-            className="text-blue-600"
+            className="text-white"
             href="https://swc-project.github.io/docs/usage-swc-loader"
           >
             Swc-loader config doc
@@ -58,7 +62,7 @@ export const Home = () => (
         </li>
         <li>
           <a
-            className="text-blue-600"
+            className="text-white"
             href="https://https://tailwindcss.com/docs/"
           >
             Tailwind config doc

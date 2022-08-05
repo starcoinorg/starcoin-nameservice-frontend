@@ -43,14 +43,14 @@ export class SearchBar extends React.Component<
       "block text-lg rounded-l-lg pl-10 px-4 focus:outline-none w-full";
     if (this.props.fat) {
       input_style =
-        "block text-lg lg:text-2xl rounded-l-lg pl-10 px-4 focus:outline-none w-full py-4 lg:py-8";
+        "block text-lg md:text-2xl rounded-l-lg pl-10 px-4 focus:outline-none w-full py-4 md:py-8";
     }
     let button_style =
-      " text-xl text-white bg-blue-500 rounded-r-lg w-full shrink px-4 max-w-[30%] lg:max-w-[15%] hover:bg-blue-400 hover:text-slate-100";
+      " text-xl text-white bg-brightblue rounded-r-lg w-full shrink px-4 max-w-[30%] md:max-w-[15%] hover:bg-blue-400 hover:text-slate-100";
 
     if (this.props.show) {
       return (
-        <div className="relative shadow-sm w-[90%] lg:w-[60%] flex rounded-lg text-slate-500">
+        <div className="relative shadow-sm w-[90%] md:w-[60%] flex rounded-lg text-slate-500">
           <div className="text-lg text-slate-300 absolute inset-y-0 left-0 px-3 flex items-center pointer-events-auto">
             <FontAwesomeIcon icon={faSearch} />
           </div>

@@ -12,6 +12,51 @@ export interface Domain {
     subs: SubDomain[];
 }
 
+export function mockDomains() : Domain[] {
+    return [
+        {
+            name: "example1",
+            parent: "stc",
+            expiration_date: "1660905074",
+            address_hash: "0x0000000000000000000000000000000000000000",
+            records: [],
+            subs: []
+        },
+        {
+            name: "example2",
+            parent: "stc",
+            expiration_date: "1660905074",
+            address_hash: "0x0000000000000000000000000000000000000000",
+            records: [],
+            subs: []
+        },
+        {
+            name: "example3",
+            parent: "stc",
+            expiration_date: "1660905074",
+            address_hash: "0x0000000000000000000000000000000000000000",
+            records: [],
+            subs: []
+        },
+        {
+            name: "example4",
+            parent: "stc",
+            expiration_date: "1660905074",
+            address_hash: "0x0000000000000000000000000000000000000000",
+            records: [],
+            subs: []
+        },
+        {
+            name: "example5",
+            parent: "stc",
+            expiration_date: "1660905074",
+            address_hash: "0x0000000000000000000000000000000000000000",
+            records: [],
+            subs: []
+        },
+    ]
+}
+
 export interface SubDomain {
     prefix: string;
     address_hash: string;
