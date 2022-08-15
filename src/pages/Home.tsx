@@ -20,7 +20,7 @@ export const Home = () => (
         <span className=" text-xl text-blue-300">Tailwind</span>
       </h1>
       <h3>现在享受你的Web时光吧~</h3>
-      <SearchBar show={true} fat={true} />
+      <SearchBar />
       <div className="max-w-[80%]">
 
         <Notification

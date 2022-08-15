@@ -6,6 +6,7 @@ export interface AuthContextType {
   user: User;
   signIn: (user: User, callback: () => void) => void;
   signOut: (callback: () => void) => void;
+  update: (user: User) => void;
 }
 
 export let AuthContext = React.createContext<AuthContextType>(null!);
@@ -39,6 +40,9 @@ export class AuthProvider extends React.Component<any, AuthProviderState> {
           callback();
         });
       },
+      update: (user: User) => {
+        this.setState({ user: user });
+      }
     };
     return (
       <AuthContext.Provider value={value}>

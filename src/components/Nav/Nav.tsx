@@ -41,10 +41,10 @@ export class Nav extends React.Component<NavProps, NavStates> {
         <Link to="/">Home</Link>
       </li>
       <li className=" hover:text-slate-300">
-        <Link to="/">Faq</Link>
+        <Link to="/faq">Faq</Link>
       </li>
       <li className=" hover:text-slate-300">
-        <Link to="/">About</Link>
+        <Link to="/about">About</Link>
       </li>
     </>
     return (
