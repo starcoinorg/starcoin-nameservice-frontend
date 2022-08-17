@@ -26,7 +26,7 @@ export class DomainList extends React.Component<DomainListProps, DomainListState
         let rows = []
         for (let domain of domains) {
             rows.push(
-                <li className="p-4 flex justify-between border-b-slate-400 hover:bg-slate-200 rounded-md">
+                <li className="p-4 flex justify-between border-b-slate-400 hover:bg-slate-200 rounded-md" onClick={()=>{this.props.onClick(domain)}}>
                     <span className=" text-xl text-blue-500">{domain.name + "." + domain.parent}</span>
                     <span>{"Expires at: " + timeConverter(+domain.expiration_date)}</span>
                 </li>
