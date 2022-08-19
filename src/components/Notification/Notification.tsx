@@ -15,7 +15,7 @@ export class Notification extends React.Component<NotificationProps> {
   render() {
     return (
       <div className="backdrop-blur-md bg-white bg-opacity-20 text-white p-4 rounded-lg max-w-2xl self-center min-w-full">
-        <a href="">
+        <a href={this.props.link_to}>
           <div className="items-center flex justify-between place-items-center gap-0 lg:gap-4">
             <img
               className=" max-h-10 rounded-full bg-purple-500 p-2"

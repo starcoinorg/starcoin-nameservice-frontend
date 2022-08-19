@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { User } from "../../data/user";
+import { StarMaskAuthProvider } from "./AuthProvider";
 import { MockAuthProvider } from "./MockAuthProvider";
 
 export interface AuthContextType {
@@ -16,7 +17,7 @@ export interface AuthProviderState {
 }
 
 export class AuthProvider extends React.Component<any, AuthProviderState> {
-  provider: any = new MockAuthProvider();
+  provider: any = new StarMaskAuthProvider();
   constructor(props: any) {
     super(props);
 
