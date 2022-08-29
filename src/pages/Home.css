@@ -5,8 +5,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: url(https://starcoin.org/images/bg-home.png)
-    repeat scroll 0% 0% / cover;
+  background: url(https://starcoin.org/images/bg-home.png) repeat scroll 0% 0% /
+    cover;
 }
 
 main {

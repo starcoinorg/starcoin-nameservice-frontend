@@ -1,13 +1,13 @@
-const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const ImageConfigWebpackPlugin = require('image-config-webpack-plugin');
-const webpack = require('webpack');
+const path = require("path");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const ImageConfigWebpackPlugin = require("image-config-webpack-plugin");
+const webpack = require("webpack");
 module.exports = {
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        loader: 'swc-loader',
+        loader: "swc-loader",
         exclude: /node_modules/,
       },
       {
@@ -17,7 +17,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
+    extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
     fallback: {
       util: require.resolve("util/"),
       assert: require.resolve("assert/"),
@@ -28,7 +28,7 @@ module.exports = {
     },
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, "dist"),
   },
   plugins: [
     new ImageConfigWebpackPlugin(),
@@ -37,7 +37,7 @@ module.exports = {
       Buffer: ["buffer", "Buffer"],
     }),
     new HtmlWebPackPlugin({
-      template: './src/index.html',
+      template: "./src/index.html",
     }),
   ],
 };

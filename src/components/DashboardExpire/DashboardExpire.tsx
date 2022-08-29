@@ -1,9 +1,7 @@
 import React from "react";
 
 interface DashboardExpireProps {
-    user: any;
+  user: any;
 }
 
-export class DashboardExpire extends React.Component {
-    
-}
+export class DashboardExpire extends React.Component {}

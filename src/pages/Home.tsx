@@ -22,17 +22,13 @@ export const Home = () => (
       <h3>现在享受你的Web时光吧~</h3>
       <SearchBar />
       <div className="max-w-[80%]">
-
         <Notification
           link_to=""
           title="STCNS constitution book now available"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
         />
       </div>
-
     </main>
-
-
 
     <footer className=" mt-20">
       <ul className=" bg-brightblue justify-center p-4">

@@ -1,7 +1,7 @@
 import "./index.css";
 
 import React from "react";
-import {createRoot} from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { AuthProvider } from "./components/Auth/Auth";
@@ -24,6 +24,6 @@ const App = () => (
     </BrowserRouter>
   </AuthProvider>
 );
-const container = document.getElementById('app');
+const container = document.getElementById("app");
 const root = createRoot(container);
 root.render(<App />);
